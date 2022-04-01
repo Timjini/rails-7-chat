@@ -1,5 +1,6 @@
 class RoomsController < ApplicationController
   before_action :authenticate_user!
+  
   def index
     @room = Room.new
     @rooms = Room.public_rooms

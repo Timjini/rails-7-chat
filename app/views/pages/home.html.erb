@@ -1,10 +1,7 @@
-<h1>Turbochat</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-
-<% if current_user %>
-    <%= link_to "Start Chatting", rooms_path%>
-    <%= button_to "Logout", destroy_user_session_path, method: :delete %>
-<% else %>
-    <%= link_to "Login", new_user_session_path %>
-    <%=link_to "Sign Up", new_user_registration_path %>
-<% end %>
+<div class="jumbotron text-center text-white ">
+  <h1 class="display-4">Hello, world!</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <hr class="my-4">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+</div>
